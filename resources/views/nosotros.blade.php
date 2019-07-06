@@ -17,7 +17,7 @@
 <h2 class="my-5">El nombre es {{$nombre}}:</h2>
 <p>{{$nombre}} Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim possimus magni atque,
  eum harum minima non ullam placeat ipsam. Dignissimos, autem? Quia blanditiis recusandae 
- minima nihil corporis maxime dolores esse.</p>
+ minima nihil corporis maxime dolores esse...</p>
  @break
  @case($nombre=='Luciana')
 <h2 class="my-5">El nombre es {{$nombre}}:</h2>
