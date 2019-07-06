@@ -11,16 +11,39 @@
     <title>Hello, world!</title>
   </head>
   <body>
-  <div class="container">
-  <a href="{{ route('inicio') }}" class="btn btn-primary">Inicio</a>
-  <a href="{{ route('fotos') }}" class="btn btn-primary">Fotos</a>
-  <a href="{{ route('blog') }}" class="btn btn-primary">Blog</a>
-  <a href="{{ route('nosotros') }}" class="btn btn-primary">Nosotros</a>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Logo</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a href="{{ route('inicio') }}" class="nav-link">Inicio<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a href="{{ route('fotos') }}" class="nav-link">Fotos</a>
+      </li>
+      <li class="nav-item">
+        <a href="{{ route('blog') }}" class="nav-link">Blog</a>
+      </li>
+      <li>
+        <a href="{{ route('nosotros') }}" class="nav-link">Nosotros</a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+     Crud realizado con laravel
+    </span>
   </div>
+</nav>
+
         <div class="container">
         @yield('seccion') 
         </div>
-<div>footer</div>
+<nav class="navbar fixed-bottom navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Footer</a>
+</nav>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
