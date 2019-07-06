@@ -1,4 +1,4 @@
 @extends('plantilla')
 @section('seccion')
-<h1>Fotos</h1>
+<h1>Fotos leo</h1>
 @endsection
